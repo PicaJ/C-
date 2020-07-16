@@ -1,0 +1,21 @@
+linux getopt（）函数：	
+	a: -> -a have argument
+	ab: -> -b have argument not -a have argument
+	de:: ->  -d have not argument ,but -e have argument(-e1)
+
+	optind: point to the next option
+	optarg: point to the current option of argument 
+	
+		-a 1 -b 2 -c 3 -d4 -e5
+	optind->	1  2  3 4  5 6  7   8  
+
+Linux stat（）函数：
+	#include <sys/stat.h>
+	int file_size2(char* filename)
+	{
+		struct stat statbuf;
+		stat(filename,&statbuf);
+		int size = statbuf.st_size;
+		return size;
+	}
+
