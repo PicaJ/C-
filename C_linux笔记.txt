@@ -19,3 +19,7 @@ Linux stat（）函数：
 		return size;
 	}
 
+
+查看.a静态库信息：
+ 	readelf -a xxxx.a	//主要看运行的芯片、位数
+
