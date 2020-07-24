@@ -10,15 +10,7 @@ linux getopt（）函数：
 	optind->	1  2  3 4  5 6  7   8  
 
 Linux stat（）函数：
-	#include <sys/stat.h>
-	int file_size2(char* filename)
-	{
-		struct stat statbuf;
-		stat(filename,&statbuf);
-		int size = statbuf.st_size;
-		return size;
-	}
-
+int stat(const char * file_name, struct stat *buf);
 	struct stat {
     		dev_t st_dev; //device 文件的设备编号
     		ino_t st_ino; //inode 文件的i-node
