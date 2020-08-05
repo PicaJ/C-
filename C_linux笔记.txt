@@ -1,3 +1,6 @@
+main 的参数管理：
+	当检查参数发现无效选项时，会把argv中的无效选项位置重新布置，紧靠近有效选项参数的后面，并且互相紧密排列：
+	-a str1 -b str2 -c -d -e str3 str4 str5	//从-c开始为无效选型（-c、-d、-e）str3后依次为-c选项参数
 linux getopt（）函数：	
 	a: -> -a have argument
 	ab: -> -b have argument not -a have argument
